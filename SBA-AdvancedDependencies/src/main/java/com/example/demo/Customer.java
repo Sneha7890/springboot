@@ -1,5 +1,7 @@
 package com.example.demo;
-
+/*
+ * Created an Customer class that has private attributes like id, fname, lname.
+ */
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,13 +16,15 @@ public class Customer {
   private Long id;
   private String firstName;
   private String lastName;
-
+  
+// Constructor to initialize private attributes
   protected Customer() {}
 
   public Customer(String firstName, String lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
+
 
   @Override
   public String toString() {
